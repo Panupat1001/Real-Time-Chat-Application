@@ -12,63 +12,23 @@
    box-sizing: border-box;
    margin: 0;
    padding: 0;
-   font-size:20px;
-   font-family: "Madimi One", sans-serif;
-   font-weight: 400;
-   font-style: normal;
 }
-
-.login {
-   box-sizing: border-box;
-   margin: 0;
-   padding: 0;
-   font-size:70px;
-   font-family: "Madimi One", sans-serif;
-   color: #A37463;
-   font-weight: 400;
-   font-style: normal;
-}
-
-.slotchat {
-   box-sizing: border-box;
-   margin: 0;
-   padding: 0;
-   font-size:40px;
-   font-family: "Madimi One", sans-serif;
-   color: #000000;
-   font-weight: 100;
-   font-style: normal;
-}
-
-.findacc {
-   box-sizing: border-box;
-   margin: 0;
-   padding: 0;
-   font-size:50px;
-   font-family: "Madimi One", sans-serif;
-   color: #A37463;
-   font-weight: 400;
-   font-style: normal;
-}
-
-.join-main input[type='email'] {
-   font-size: 25px;
-   padding: 40px;
-   height: 40px;
-   border-radius: 50px;
-   border: none;
-   background: #DBDBDB;
-   width: 100%;
-   font-family: "Madimi One", sans-serif;
-}
-
+.signup {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size:70px;
+    font-family: "Madimi One", sans-serif;
+    color: #A37463;
+    font-weight: 400;
+    font-style: normal;
+ }
 body {
    font-family: 'Roboto', sans-serif;
    font-size: 16px;
    background: #A37463;
    margin: 20px;
 }
-
 
 ul {
    list-style: none;
@@ -119,8 +79,8 @@ a {
 }
 
 .chat-header {
-   background: #ffffff;
-   color: #000000;
+   background: #3b3b4f;
+   color: #fff;
    /* border-top-left-radius: 5px;
    border-top-right-radius: 5px; */
    padding: 15px;
@@ -128,7 +88,6 @@ a {
    display: flex;
    align-items: center;
    justify-content: space-between;
-   border: solid 1px #000000;
 }
 
 .chat-main {
@@ -137,16 +96,14 @@ a {
 }
 
 .chat-sidebar {
-   background: #ffffff;
+   background: #323244;
    color: #fff;
    padding: 20px 20px 60px;
    overflow-y: scroll;
-   border: solid 1px #000000;
 }
 
 .chat-sidebar h2 {
    font-size: 20px;
-   color: #000000;
    background: rgba(0, 0, 0, 0.1);
    padding: 10px;
    margin-bottom: 20px;
@@ -154,30 +111,26 @@ a {
 
 .chat-sidebar h3 {
    margin-bottom: 15px;
-   color: #000000;
 }
 
 .chat-sidebar ul li {
    padding: 10px 0;
-   color: #000000;
 }
 
 .chat-messages {
    padding: 30px;
    max-height: 500px;
    overflow-y: scroll;
-   background: #ffffff;
+   background: #34495e;
    min-height: 68vh;
-   border: solid 1px #000000;
 }
 
 .chat-messages .message {
    padding: 10px;
    margin-bottom: 15px;
-   background-color: #ffffff;
-   border-radius: 55px;
+   background-color: #aac0c1;
+   border-radius: 5px;
    overflow-wrap: break-word;
-   border: solid 1px #A07060;
 }
 
 .chat-messages .message .meta {
@@ -194,9 +147,8 @@ a {
 
 .chat-form-container {
    padding: 20px 30px;
-   background-color: #ffffff;
+   background-color: #3b3b4f;
    border-radius: 0 0 5px 5px;
-   border: solid 1px #000000;
 }
 
 textarea:focus,
@@ -209,10 +161,9 @@ input:focus {
    padding: 0px 20px;
    border: none;
    height: 40px;
-   width: 95%;
-   background: #DBDBDB;
+   width: 86%;
+   background: #d9edf7;
    border-radius: 18px;
-   border: solid 1px #A07060;
 }
 
 /* Join Page */
@@ -231,7 +182,7 @@ input:focus {
 }
 
 .join-main {
-   padding: 30px 40px;
+   padding: 25px 40px 60px 40px;
    background: #ffffff;
    border-bottom-left-radius: 5px;
    border-bottom-right-radius: 5px;
@@ -259,18 +210,27 @@ input:focus {
    border: none;
    background: #DBDBDB;
    width: 100%;
+   font-family: "Madimi One", sans-serif;
 }
 .join-main input[type='password'] {
-   font-size: 16px;
-   padding: 20px;
+   font-size: 25px;
+   padding: 40px;
    height: 40px;
    border-radius: 50px;
    border: none;
    background: #DBDBDB;
    width: 100%;
    font-family: "Madimi One", sans-serif;
-   font-weight: 400;
-   font-style: normal;
+}
+.join-main input[type='email'] {
+   font-size: 25px;
+   padding: 40px;
+   height: 40px;
+   border-radius: 50px;
+   border: none;
+   background: #DBDBDB;
+   width: 100%;
+   font-family: "Madimi One", sans-serif;
 }
 
 .join-main select {
@@ -329,15 +289,15 @@ input:focus {
 
 .send-button {
    cursor: pointer;
-   padding: 12px 12px;
+   padding: 10px 30px;
    border: none;
    border-radius: 5px;
-   background: #A07060;
-   color: #ffffff;
+   background: #b1d8eb;
+   color: #3f5163;
    border: none;
-   border-radius: 50px;
-   font-size: 10px;
-
+   border-radius: 25px;
+   font-size: 17px;
+   margin-left: 20px;
 }
 
 @media only screen and (max-width: 464px) {

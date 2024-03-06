@@ -18,8 +18,7 @@ const io = socketIo(server);
 // set static file
 app.use(express.static(path.join(__dirname, 'public')));
 
-const botName = 'XeroxChat Bot';
-
+const botName = 'SlotChat Bot';
 // run when client connects
 io.on('connection', (socket) => {
    socket.on('joinRoom', ({ username, room }) => {
@@ -28,7 +27,7 @@ io.on('connection', (socket) => {
       socket.join(user.room);
 
       // welcome current user
-      socket.emit('message', formatMessage(botName, 'Welcome to XeroxChat!'));
+      socket.emit('message', formatMessage(botName, 'Welcome to Slot888'));
 
       // broadcast when a user connects
       socket.broadcast
@@ -73,5 +72,5 @@ io.on('connection', (socket) => {
 
 const PORT = process.env.PORT || 3000;
 server.listen(PORT, () => {
-   console.log(`🎯 Server is running on PORT: ${PORT}`);
+   console.log(`🎯 Server is running on PORT: http://localhost:${PORT}/`);
 });
